@@ -1,0 +1,40 @@
+{
+  "name": "pi-qol",
+  "version": "0.1.0",
+  "description": "Some quality of life pi extensions I use",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmustier/pi-qol.git"
+  },
+  "homepage": "https://github.com/tmustier/pi-qol#readme",
+  "bugs": {
+    "url": "https://github.com/tmustier/pi-qol/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "pi"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/auto-continue-on-error.ts",
+      "./extensions/codex-image.ts",
+      "./extensions/continue-shortcut.ts",
+      "./extensions/model-thinking-policy.ts",
+      "./extensions/non-interactive-bash.ts",
+      "./extensions/open-file.ts",
+      "./extensions/split.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.0"
+  }
+}

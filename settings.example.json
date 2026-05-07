@@ -1,0 +1,32 @@
+{
+  "packages": [
+    "git:github.com/tmustier/pi-qol",
+
+    "npm:pi-custom-compaction",
+    "npm:pi-subagents",
+
+    {
+      "source": "git:github.com/mitsuhiko/agent-stuff",
+      "extensions": [
+        "pi-extensions/notify.ts",
+        "pi-extensions/context.ts",
+        "pi-extensions/session-breakdown.ts",
+        "pi-extensions/review.ts",
+        "extensions/whimsical.ts"
+      ]
+    },
+
+    {
+      "source": "git:github.com/tmustier/pi-extensions",
+      "extensions": [
+        "files-widget/index.ts",
+        "usage-extension/index.ts",
+        "code-actions/index.ts",
+        "raw-paste/index.ts",
+        "session-recap/index.ts"
+      ]
+    },
+
+    "npm:@tmustier/pi-session-hud"
+  ]
+}
