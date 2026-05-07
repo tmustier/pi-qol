@@ -8,10 +8,9 @@
     {
       "source": "git:github.com/mitsuhiko/agent-stuff",
       "extensions": [
-        "pi-extensions/notify.ts",
-        "pi-extensions/context.ts",
-        "pi-extensions/session-breakdown.ts",
-        "pi-extensions/review.ts",
+        "extensions/notify.ts",
+        "extensions/session-breakdown.ts",
+        "extensions/review.ts",
         "extensions/whimsical.ts"
       ]
     },
