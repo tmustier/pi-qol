@@ -21,7 +21,6 @@
   ],
   "pi": {
     "extensions": [
-      "./extensions/auto-continue-on-error.ts",
       "./extensions/codex-image.ts",
       "./extensions/continue-shortcut.ts",
       "./extensions/model-thinking-policy.ts",

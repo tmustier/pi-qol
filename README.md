@@ -2,7 +2,7 @@
 
 Some quality of life [Pi coding agent](https://github.com/badlogic/pi-mono) extensions I use, plus a curated list of recommended packages from elsewhere.
 
-This repo ships **seven small extensions I wrote** and points at a tier-list of **other people's packages** that I'd install on every machine I run Pi on. Nothing here is essential — Pi is great out of the box — but together these make daily use noticeably nicer.
+This repo ships **six small extensions I wrote** and points at a tier-list of **other people's packages** that I'd install on every machine I run Pi on. Nothing here is essential — Pi is great out of the box — but together these make daily use noticeably nicer.
 
 ## Install the local extensions
 
@@ -18,7 +18,7 @@ Add to `~/.pi/agent/settings.json`:
 
 Then `pi update` (or restart Pi).
 
-You'll get all seven extensions below. To enable only a subset, use a filter:
+You'll get all six extensions below. To enable only a subset, use a filter:
 
 ```json
 {
@@ -26,7 +26,6 @@ You'll get all seven extensions below. To enable only a subset, use a filter:
     {
       "source": "git:github.com/tmustier/pi-qol",
       "extensions": [
-        "extensions/auto-continue-on-error.ts",
         "extensions/non-interactive-bash.ts",
         "extensions/continue-shortcut.ts"
       ]
@@ -39,7 +38,6 @@ You'll get all seven extensions below. To enable only a subset, use a filter:
 
 | File | What it does |
 |---|---|
-| [`auto-continue-on-error.ts`](extensions/auto-continue-on-error.ts) | Automatically resumes the agent after recoverable errors (transient provider/network failures, terminated streams, malformed tool-call JSON). Backs off on transient errors, retries malformed JSON once, paused after N consecutive resumes. Configurable via `PI_AUTO_CONTINUE_*` env vars. |
 | [`non-interactive-bash.ts`](extensions/non-interactive-bash.ts) | Stops Pi from hanging when bash subprocesses (git, brew) try to launch interactive editors or pagers. Sets `GIT_EDITOR=true`, `EDITOR=false`, `PAGER=cat`, `HOMEBREW_NO_AUTO_UPDATE=1`, etc. |
 | [`continue-shortcut.ts`](extensions/continue-shortcut.ts) | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd> sends `continue` to the agent. |
 | [`codex-image.ts`](extensions/codex-image.ts) | Adds a `codex_image` tool that generates or edits raster images via the local Codex CLI. Requires Codex installed and logged in (`~/.codex/auth.json`). |
@@ -80,7 +78,7 @@ Copy [`settings.example.json`](settings.example.json) into `~/.pi/agent/settings
 
 ## A note on licenses and credit
 
-The seven extensions in [`extensions/`](extensions/) are by [Thomas Mustier](https://github.com/tmustier) and released under [MIT](LICENSE).
+The six extensions in [`extensions/`](extensions/) are by [Thomas Mustier](https://github.com/tmustier) and released under [MIT](LICENSE).
 
 The packages listed under **Recommended packages** are not redistributed here — this repo just links to them. Each one is published in its own repo by its own author and inherits whatever license that author chose. If you install them, you're installing them directly from those upstream sources.
 
